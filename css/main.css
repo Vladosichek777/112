@@ -1,0 +1,70 @@
+.list {
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+.list li {
+    list-style: none;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    background-color: blueviolet;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: all .3s;
+    text-align: center;
+}
+
+.list>li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.list>li:hover {
+    background-color: rgb(223, 19, 19);
+    color: white;
+}
+
+.first {
+    margin: 0;
+    display: none;
+}
+
+.first li {
+    position: relative;
+}
+
+.list li:hover .first {
+    display: block;
+}
+
+.second {
+    margin: 0;
+    display: none;
+}
+
+.first li:hover .second {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+
+.third {
+    margin: 0;
+    display: none;
+}
+
+.second li:hover .third {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
